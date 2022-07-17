@@ -14,7 +14,7 @@ df_1=pd.read_csv("first_telc.csv")
 
 q = ""
 
-@app.route("/")
+@app.route("/",methods=['GET'])
 def loadPage():
 	return render_template('home.html', query="")
 
